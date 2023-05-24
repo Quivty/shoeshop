@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Karantina', cursive;
+    font-size: 17px;
+    background: url("images/tlo.jpg");
+    background-repeat: no-repeat;
+
+}
+
+header{
+    height: 20vh;
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.promocja{
+    background: #eee;
+    width: 100vw;
+    height: 80vh;
+    display: grid;
+    justify-content: center;
+    align-content: start;
+    text-align: center;
+}
+
+.promocja > img{
+    width:300px;
+    justify-self: center;
+    display:block;
+    margin: 20px 0;
+}
+
+.promocja > p{
+    font-size: 3rem;
+}
+
+.green{
+    color: #006204;
+}
+
+.greendiv{
+    background: #006204;
+    padding: 20px;
+    width: 100vw;
+    color: white;
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.sklep{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 60px 20px;
+    border-radius: 20px;
+}
+
+.sklep>p{
+    color: white;
+    font-size: 2rem;
+    padding: 5px;
+    text-align: center;
+}
+
+.produkty{
+    background: #eee;
+    padding: 20px;
+}
+
+h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.produkt{
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.produkt >img{
+    width: 300px;
+    padding: 20px 0;
+}
+
+.produkt> p{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+hr{
+    height: 5px;
+    border-radius: 3px;
+    background:#006204;
+    border: none;
+    margin: 20px 0;
+}
+
+.kontakt{
+    display: grid;
+    justify-content: center;
+    font-size: 2rem;
+    background: #eee;
+    text-align: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.kontakt>*{
+    display: block;
+}
+
+footer{
+    background: #434343;
+    height: 50vh;
+    width: 100%;
+}
