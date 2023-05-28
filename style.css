@@ -9,6 +9,7 @@ body{
     font-size: 17px;
     background: url("images/tlo.jpg");
     background-repeat: no-repeat;
+    background-size:contain;
 
 }
 
@@ -39,22 +40,30 @@ a{
 
 .promocja{
     background: #eee;
-    width: 100vw;
     height: 80vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-content: start;
+    text-align: center;
+    overflow: hidden;
+}
+
+.promel{
     display: grid;
     justify-content: center;
     align-content: start;
     text-align: center;
 }
 
-.promocja > img{
+.promel > img{
     width:300px;
     justify-self: center;
     display:block;
     margin: 20px 0;
 }
 
-.promocja > p{
+.promel> p{
     font-size: 3rem;
 }
 
@@ -65,10 +74,10 @@ a{
 .greendiv{
     background: #006204;
     padding: 20px;
-    width: 100vw;
     color: white;
     font-size: 2.5rem;
     margin: 20px 0;
+    width: 100vw;
 }
 
 .sklep{
@@ -86,7 +95,7 @@ a{
     text-align: center;
 }
 
-.produkty{
+.list{
     background: #eee;
     padding: 20px;
 }
@@ -94,6 +103,11 @@ a{
 h2{
     text-align: center;
     font-size: 3rem;
+}
+
+.produkty{
+    display: grid;
+
 }
 
 .produkt{
@@ -139,4 +153,81 @@ footer{
     background: #434343;
     height: 50vh;
     width: 100%;
+}
+
+.del{
+    display: none;
+}
+
+@media only screen and (min-width: 1440px){
+
+
+    body{ 
+        overflow-x:hidden;
+    }
+h1{
+    font-size: 6rem;
+}
+
+    header{
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-content: center;
+    }
+
+    .promocja{
+        background: #eee;
+        height: 80vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+        overflow: hidden;
+    }
+
+    a{
+        font-size: 4rem;
+    }
+
+    .promel{
+        height: 60vh;
+    }
+
+    .promel >p{
+        font-size: 4rem;
+    }
+
+    .sale{
+        color: red;
+        text-decoration: line-through;
+    }
+
+    .promel > img{
+        width: 500px;
+    }
+
+    .greendiv{
+        grid-column: 1/5;
+        height: 20vh;
+        font-size: 4rem;
+        display: grid;
+        align-content: center;
+    }
+
+    .del{
+        display: grid;
+
+    }
+
+    .produkty{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+    .produkt>img{
+        width: 500px;
+    }
+    .produkt>p{
+        font-size: 4rem;
+    }
 }
