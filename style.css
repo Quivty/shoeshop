@@ -18,8 +18,6 @@ header{
     height: 10vh;
     display: grid;
     align-content: center;
-    position: fixed;
-    top:0;
     width: 100vw;
     background: url("images/tlo.jpg");
 }
@@ -118,7 +116,6 @@ a{
 
 .promocja{
     background: #eee;
-    margin-top: 10vh;
     height: 80vh;
     display: grid;
     justify-content: center;
